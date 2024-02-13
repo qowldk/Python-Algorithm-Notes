@@ -17,7 +17,7 @@ def dfs(x, y) :
   for i in range(4) :
     nx = x + dx[i]
     ny = y + dy[i]
-    if nx >= 0 and nx < N and ny >= 0 and ny < N and graph[nx][ny] == 1 :
+    if nx >= 0 and nx < N and ny >= 0 and ny < M and graph[nx][ny] == 1 :
       dfs(nx, ny)
 
 for i in range(N) :
